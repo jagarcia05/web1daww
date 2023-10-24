@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-azul-c">
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/descarga.jfif" alt="logo" width="50"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-azul-o text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="formularios" class="py-3">
+                    <h2 class="text-center">formularios </h2>
+                    <h1>formulario login</h1>
+                
+                    
+                    <form class="form-login" action="pagina.phg" method="post"  >
+                      <fieldset>
+                        <legend>login</legend>
+                        <p>nombre<input type="text" name="nombre" id=""></p>
+                        <p>contraseña<input type="password" name="contraseña" id=""></p>
+                        <p><input  type="submit" value="login" class="botonazul" ></p>
+                      </fieldset>  
+                       
+                    </form>
+                
+                <h1>formulario registro</h1>
+                <fieldset>
+                    <legend>registro</legend>
+                    <form  action="pagina.phg" method="post" class="form-registro">
+                        <p>nombre<input type="text" name="nombre" id=""></p>
+                        <p>contraseña<input type="password" name="contraseña" id=""></p>
+                        <p>fecha de nacimieto:lista simple <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+
+                        </select>
+                        <select>
+                            <option value="1">enero</option>
+                            <option value="2">Febrero</option>
+                            <option value="3">Marzo</option>
+                            <option value="4">abril</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+
+                        </select>
+                        <select>
+                            <option value="1">2000</option>
+                            <option value="2">2001</option>
+                            <option value="3">2002</option>
+                            <option value="4">2003</option>
+                            <option value="5">2004</option>
+                            <option value="6">2005</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+
+                        </select>
+                    </p>comentario<p>
+                        <p><textarea rows="10" cols="30"></textarea></p>
+                        <p>aficiones <br>
+                            <input type="checkbox" name="cine" id="1" >cine <br>
+                            <input type="checkbox" name="zoo" id="2" >zoo <br>
+                            <input type="checkbox" name="leer" id="3" >leer <br>
+                            <input type="checkbox" name="gym" id="4" >gym <br>
+                        </p>
+                        <p>estado civil <br> 
+                            <input type="radio" name="ec" id="">casado<br>
+                            <input type="radio" name="ec" id="">solero <br>
+                            <input type="radio" name="ec" id="">viuda/a<br>
+                            <input type="radio" name="ec" id="">otro<br>
+                            
+                        </p>
+                        provincia <br>
+                            <select multiple size="5">
+                                <option value="1">toledo <br></option>
+                                <option value="1">albacete <br></option>
+                                <option value="1">cd <br></option>
+                                <option value="1">cuenca <br></option>
+                                <option value="1">guadalajara <br></option>
+                            </select>
+                        <p>foto: 
+                            <input type="file" name="foto" id="">
+                            
+                        </p> 
+                        <p><input class="botonazul" type="submit" name="Enviar" id=""></p>
+                         
+                      
+                    </form>
+                </fieldset class="cajaforma">
+                <div class="cb"></div>
+                
+                <form action="pagina.hpg" method="post" class="form-html5">
+                    <h1>FORMULARIO CON FORMATO HTML</h1>
+                    <fieldset class="cuadradoazul">
+                        <legend class="legenda">Imputs Html</legend> 
+                        <p><label for="" >color:   </label><input type="color" name="color" id=""></p>
+                        <p><label for="" >date:</label> <input type="date" name="date" id=""></p>
+                         <p><label for="">datetime</label><input type="datetime" name="datetime" id=""></p>
+                        <p><label for="">datetime-local</label><input type="datetime-local" name="datetime-local" id=""></p>
+                        <p><label for="">email</label><input type="email" name="email" id=""></p>
+                         <p><label for="">month</label><input type="month" name="month" id=""></p>
+                         <p><label for="">range</label><input type="range" name="ramge" id=""></p>
+                         <p><label for="">telefono</label><input type="number" name="number" id=""></p>
+                         <p><label for="">time:</label><input type="time" name="time" id=""></p>
+                         <p><label for="">url</label><input type="url" name="url" id=""></p>
+                         <p><label for="">week</label><input type="week" name="week" id=""></p>
+                         <p> <input type="submit" name="enviar" id="" class="botonazul"></p>
+                        
+                
+                
+                
+                    
+                
+                
+                
+                
+                    </fieldset> 
+                    <div class="cb"></div>
+                </form>
+                   
+                
+
+
+
+
+                
+                    
+                    
+                    
+                    
+                    
+                    
+               
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            </div>
+            </div>
+
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3">&copy; JOSE ANTONIO</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>
